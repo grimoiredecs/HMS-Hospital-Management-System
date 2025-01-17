@@ -1,7 +1,6 @@
 <h1> Meeting 1: Kick-off Meeting </h1>
 <h2> Date: 17/01/2025 - 21:00 </h2>
-<br>
-<br>
+
 <p> In this meeting, we started the introduction of the Assignment and the Seminar, as well as the greeting of group members. </p>
 <br>
 <p> We also selected the Group Leader and divide our team into 2 subgroup:
