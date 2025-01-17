@@ -1,0 +1,67 @@
+software requirement
+
+1. functional requirement:
+• Patient Management: Register patients, update patient records, manage medical history, and retrieve patient details.
+
+• Appointment Scheduling: Allow patients to book appointments with doctors, update appointment status, and manage doctor availability.
+
+• Billing: Handle patient billing, payment processing, and generate invoices.
+
+• Staff Management: Manage doctor and nurse information, scheduling, and workload tracking.
+
+2. non-functional:
+- maintainability: 
++ The system should be designed with clear, modular, and well-documented code that allows for easy debugging, enhancement, and refactoring.
+
++ The system should include logging and error-handling mechanisms that can aid in troubleshooting and future updates.
+
+- scalability:
++ The HMS should be able to handle a growing number of patients, appointments, staff members, and billing transactions as the hospital expands.
+
++Patient Management and Appointment Scheduling functionalities must support an increasing volume of patient data without degradation in performance.
+
++The system must accommodate more staff and doctors, along with their schedules and work logs, as the hospital's network of healthcare providers grows.
+
+- Extensibility:
++ The system must allow for the addition of new modules to be simple to integrate into the existing system with minimal rework.
+
+- flexibility:
++ The HMS should be adaptable to meet varying needs based on the specific hospital's requirements, such as customization in how patient records are managed or how appointments are scheduled.
+
++ The system should allow for the adjustment of user roles and permissions (for instance, doctors may have more rights to patient data than nurses).
+
++ The Staff Management module should support different staffing models, allowing for variations in how shifts are scheduled and managed based on the hospital's operational needs.
+
+- modularity:
++ The HMS should be designed with distinct, independently deployable modules to ensure that changes to one module do not impact others
++ Each functionality, such as Patient Management, Appointment Scheduling, Billing, and Staff Management, should be self-contained, enabling updates or changes in one area to occur without disrupting others.
++ Allows hospitals to scale individual parts of the system and upgrade them independently without major system downtime or disruption.
+
+system user:
+- Administrator
+- Patient
+- Doctor
+- Nurse
+
+functional requirement for each user
+Administrator:
+- Login to the system.
+- Add/remove Staff members to/from the system.
+
+Doctor:
+- Login to the system.
+- Manage user profiles.
+- update medical and health information in patient records
+- retrieve patient details
+
+Nurse:
+- Login to the system.
+- Manage user profiles.
+- retrieve patient details
+
+Patient:
+- Login to the system.
+- Manage user profiles.
+- book appointments with doctor
+
+
