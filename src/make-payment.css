@@ -1,0 +1,13 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Staff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="admin-add-staff.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="card p-4 shadow-lg" style="width: 400px;">
+        <h3 class="text-center">Add Staff</h3>
+
+        <form id="addStaffForm">
+            <div class="mb-3">
+                <label for="staffType" class="form-label">Type</label>
+                <select class="form-control" id="staffType" required>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Nurse">Nurse</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="first_name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first_name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last_name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+
+            <div class="mb-3" id="specializationField">
+                <label for="specialization" class="form-label">Specialization</label>
+                <input type="text" class="form-control" id="specialization">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone_number" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone_number" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="department" class="form-label">Department</label>
+                <select class="form-control" id="department" required>
+                    <option value="D001">Cardiology</option>
+                    <option value="D002">Neurology</option>
+                    <option value="D003">Pediatrics</option>
+                    <option value="D004">Emergency</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Add Staff</button>
+        </form>
+
+        <!-- Return to Dashboard Button -->
+        <div class="mt-3 text-center">
+            <a href="admin-dashboard.html" class="btn btn-secondary w-100">Return to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="admin-add-staff.js"></script>
+</body>
+</html>

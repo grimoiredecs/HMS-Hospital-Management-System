@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to HMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="text-center">
+        <h1 class="mb-4">Welcome to the Hospital Management System</h1>
+        <p class="lead">Manage appointments, patient records, billing, and staff efficiently.</p>
+
+        <!-- Separate login buttons -->
+        <div class="d-grid gap-3 mt-4">
+            <a href="login.html" class="btn btn-primary btn-lg">Patient / Employee Login</a>
+            <a href="admin-login.html" class="btn btn-danger btn-lg">Admin Login</a>
+        </div>
+
+        <!-- Temporary Quick Login for Testing -->
+        <div class="mt-4">
+            <h3>Quick Login (For Testing)</h3>
+            <button class="btn btn-success" onclick="quickLogin('Patient')">Login as Patient</button>
+            <button class="btn btn-warning" onclick="quickLogin('Doctor')">Login as Doctor</button>
+            <button class="btn btn-info" onclick="quickLogin('Nurse')">Login as Nurse</button>
+            <button class="btn btn-danger" onclick="quickLogin('Admin')">Login as Admin</button>
+        </div>
+    </div>
+
+    <script>
+        function quickLogin(type) {
+            let testUser = {
+                username: type.toLowerCase() + "Test",
+                fullName: type + " User",
+                type: type
+            };
+            sessionStorage.setItem("loggedInUser", JSON.stringify(testUser));
+            alert("Logged in as " + type + "!");
+
+            switch (type) {
+                case "Patient":
+                    window.location.href = "patient-dashboard.html";
+                    break;
+                case "Doctor":
+                    window.location.href = "doctor-dashboard.html";
+                    break;
+                case "Nurse":
+                    window.location.href = "nurse-dashboard.html";
+                    break;
+                case "Admin":
+                    window.location.href = "admin-dashboard.html";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
