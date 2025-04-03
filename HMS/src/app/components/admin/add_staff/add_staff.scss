@@ -1,0 +1,35 @@
+@use "/Users/admin/Github/HMS-Hospital-Management-System/HMS/node_modules/bootstrap/scss/bootstrap.scss" as * with (
+  $primary: #198754,
+  $card-border-radius: 1rem
+);
+
+.card h3 {
+
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: $primary;
+  text-align: center;
+  text-shadow: 0 0 10px rgba($primary, 0.3);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: $primary;
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+  }
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.card {
+  box-shadow: $box-shadow-lg;
+}
+
