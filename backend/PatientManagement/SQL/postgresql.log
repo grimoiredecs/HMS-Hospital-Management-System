@@ -1,0 +1,24 @@
+2025-04-16 02:37:01.607 +07 [8982] LOG:  starting PostgreSQL 17.4 (Postgres.app) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-04-16 02:37:01.609 +07 [8982] LOG:  listening on IPv6 address "::1", port 5432
+2025-04-16 02:37:01.609 +07 [8982] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-04-16 02:37:01.610 +07 [8982] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-04-16 02:37:01.611 +07 [8985] LOG:  database system was shut down at 2025-04-16 02:37:01 +07
+2025-04-16 02:37:01.613 +07 [8982] LOG:  database system is ready to accept connections
+2025-04-16 02:38:18.421 +07 [8982] LOG:  received fast shutdown request
+2025-04-16 02:38:18.422 +07 [8982] LOG:  aborting any active transactions
+2025-04-16 02:38:18.423 +07 [8982] LOG:  background worker "logical replication launcher" (PID 8988) exited with exit code 1
+2025-04-16 02:38:18.424 +07 [8983] LOG:  shutting down
+2025-04-16 02:38:18.424 +07 [8983] LOG:  checkpoint starting: shutdown immediate
+2025-04-16 02:38:18.480 +07 [8983] LOG:  checkpoint complete: wrote 943 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.046 s, sync=0.010 s, total=0.057 s; sync files=308, longest=0.001 s, average=0.001 s; distance=4311 kB, estimate=4311 kB; lsn=0/1B868D0, redo lsn=0/1B868D0
+2025-04-16 02:38:18.483 +07 [8982] LOG:  database system is shut down
+2025-04-16 02:40:18.113 +07 [10609] LOG:  starting PostgreSQL 17.4 (Postgres.app) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-04-16 02:40:18.115 +07 [10609] LOG:  listening on IPv6 address "::1", port 5432
+2025-04-16 02:40:18.115 +07 [10609] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-04-16 02:40:18.115 +07 [10609] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-04-16 02:40:18.117 +07 [10612] LOG:  database system was shut down at 2025-04-16 02:38:47 +07
+2025-04-16 02:40:18.119 +07 [10609] LOG:  database system is ready to accept connections
+2025-04-16 02:40:31.769 PostgresPermissionDialog[10716:16454739] +[IMKClient subclass]: chose IMKClient_Modern
+2025-04-16 02:40:31.770 PostgresPermissionDialog[10716:16454739] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+2025-04-16 02:40:33.595 +07 [10714] FATAL:  database "Patient_HMS" does not exist
+2025-04-16 02:45:18.112 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 02:45:33.915 +07 [10610] LOG:  checkpoint complete: wrote 158 buffers (1.0%); 1 WAL file(s) added, 0 removed, 0 recycled; write=15.753 s, sync=0.010 s, total=15.804 s; sync files=115, longest=0.001 s, average=0.001 s; distance=906 kB, estimate=906 kB; lsn=0/1C6A820, redo lsn=0/1C6A790
