@@ -1,0 +1,33 @@
+/* homepage.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+  }
+  
+  p.lead {
+    color: #6c757d;
+    font-size: 1.2rem;
+  }
+  
+  .btn-lg {
+    min-width: 250px;
+  }
+  
+  .d-grid {
+    display: grid !important;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  @media (max-width: 576px) {
+    .btn-lg {
+      width: 100%;
+    }
+  }
+  

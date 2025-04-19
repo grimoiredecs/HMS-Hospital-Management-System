@@ -1,0 +1,11 @@
+/* pages/ViewBills.css */
+.view-bills-page .card {
+    width: 700px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
