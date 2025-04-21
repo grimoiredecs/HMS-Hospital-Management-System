@@ -22,3 +22,53 @@
 2025-04-16 02:40:33.595 +07 [10714] FATAL:  database "Patient_HMS" does not exist
 2025-04-16 02:45:18.112 +07 [10610] LOG:  checkpoint starting: time
 2025-04-16 02:45:33.915 +07 [10610] LOG:  checkpoint complete: wrote 158 buffers (1.0%); 1 WAL file(s) added, 0 removed, 0 recycled; write=15.753 s, sync=0.010 s, total=15.804 s; sync files=115, longest=0.001 s, average=0.001 s; distance=906 kB, estimate=906 kB; lsn=0/1C6A820, redo lsn=0/1C6A790
+2025-04-16 03:20:18.882 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 03:20:18.992 +07 [10610] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.001 s, total=0.110 s; sync files=1, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=816 kB; lsn=0/1C6B1E8, redo lsn=0/1C6B190
+2025-04-16 03:34:35.846 +07 [41251] ERROR:  value too long for type character varying(15)
+2025-04-16 03:34:35.846 +07 [41251] STATEMENT:  INSERT INTO "patient_patient" ("first_name", "last_name", "date_of_birth", "department", "specialization", "phone", "email") VALUES ('Michael', 'Peck', '1986-03-17'::date, 'General', 'Children', '(424)523-8274x62862', 'taylorcarlos@example.org') RETURNING "patient_patient"."id"
+2025-04-16 03:35:18.941 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 03:35:19.253 +07 [10610] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.001 s, total=0.313 s; sync files=3, longest=0.001 s, average=0.001 s; distance=24 kB, estimate=737 kB; lsn=0/1C71318, redo lsn=0/1C712C0
+2025-04-16 03:40:18.246 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 03:40:18.458 +07 [10610] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.206 s, sync=0.001 s, total=0.212 s; sync files=2, longest=0.001 s, average=0.001 s; distance=12 kB, estimate=664 kB; lsn=0/1C74530, redo lsn=0/1C744D8
+2025-04-16 03:41:36.289 +07 [50149] ERROR:  value too long for type character varying(15)
+2025-04-16 03:41:36.289 +07 [50149] STATEMENT:  INSERT INTO "patient_patient" ("first_name", "last_name", "date_of_birth", "department", "specialization", "phone", "email") VALUES ('Kayla', 'Trevino', '2002-08-04'::date, 'Oncology', 'Cancer', '526-392-0560x129', 'sharonmorris@example.net') RETURNING "patient_patient"."id"
+2025-04-16 03:45:18.451 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 03:45:26.284 +07 [10610] LOG:  checkpoint complete: wrote 78 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.825 s, sync=0.006 s, total=7.834 s; sync files=58, longest=0.001 s, average=0.001 s; distance=341 kB, estimate=632 kB; lsn=0/1CC9C10, redo lsn=0/1CC9B80
+2025-04-16 03:50:18.276 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 03:50:19.710 +07 [10610] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.427 s, sync=0.002 s, total=1.435 s; sync files=11, longest=0.001 s, average=0.001 s; distance=33 kB, estimate=572 kB; lsn=0/1CD2250, redo lsn=0/1CD21F8
+2025-04-16 03:55:18.704 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 03:55:26.652 +07 [10610] LOG:  checkpoint complete: wrote 79 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.935 s, sync=0.007 s, total=7.949 s; sync files=61, longest=0.001 s, average=0.001 s; distance=453 kB, estimate=560 kB; lsn=0/1D436D0, redo lsn=0/1D43678
+2025-04-16 03:55:54.516 PostgresPermissionDialog[59855:16619948] +[IMKClient subclass]: chose IMKClient_Modern
+2025-04-16 03:55:54.517 PostgresPermissionDialog[59855:16619948] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+2025-04-16 03:55:55.343 +07 [59854] FATAL:  role "hms_user" does not exist
+2025-04-16 04:00:18.646 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 04:00:18.751 +07 [10610] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.001 s, total=0.106 s; sync files=1, longest=0.001 s, average=0.001 s; distance=8 kB, estimate=505 kB; lsn=0/1D45888, redo lsn=0/1D45830
+2025-04-16 04:01:31.254 PostgresPermissionDialog[62462:16632561] +[IMKClient subclass]: chose IMKClient_Modern
+2025-04-16 04:01:31.255 PostgresPermissionDialog[62462:16632561] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+2025-04-16 04:05:18.723 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 04:05:20.247 +07 [10610] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.519 s, sync=0.001 s, total=1.525 s; sync files=9, longest=0.001 s, average=0.001 s; distance=87 kB, estimate=463 kB; lsn=0/1D5B550, redo lsn=0/1D5B4C0
+2025-04-16 04:25:18.210 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 04:25:20.146 +07 [10610] LOG:  checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.930 s, sync=0.002 s, total=1.936 s; sync files=14, longest=0.001 s, average=0.001 s; distance=162 kB, estimate=433 kB; lsn=0/1D83FA0, redo lsn=0/1D83F10
+2025-04-16 04:30:18.137 +07 [10610] LOG:  checkpoint starting: time
+2025-04-16 04:30:23.014 +07 [10610] LOG:  checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.871 s, sync=0.003 s, total=4.878 s; sync files=22, longest=0.001 s, average=0.001 s; distance=369 kB, estimate=427 kB; lsn=0/1DE05A0, redo lsn=0/1DE0548
+2025-04-17 21:25:48.106 +07 [10609] LOG:  received smart shutdown request
+2025-04-17 21:25:48.110 +07 [10609] LOG:  background worker "logical replication launcher" (PID 10615) exited with exit code 1
+2025-04-17 21:25:48.111 +07 [10610] LOG:  shutting down
+2025-04-17 21:25:48.112 +07 [10610] LOG:  checkpoint starting: shutdown immediate
+2025-04-17 21:25:48.123 +07 [10610] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.013 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=384 kB; lsn=0/1DE0650, redo lsn=0/1DE0650
+2025-04-17 21:25:48.137 +07 [10609] LOG:  database system is shut down
+2025-04-21 00:03:23.134 +07 [99122] LOG:  starting PostgreSQL 17.4 (Postgres.app) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2025-04-21 00:03:23.136 +07 [99122] LOG:  listening on IPv6 address "::1", port 5432
+2025-04-21 00:03:23.136 +07 [99122] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-04-21 00:03:23.136 +07 [99122] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-04-21 00:03:23.142 +07 [99125] LOG:  database system was shut down at 2025-04-17 21:25:48 +07
+2025-04-21 00:03:23.145 +07 [99122] LOG:  database system is ready to accept connections
+2025-04-21 00:08:23.142 +07 [99123] LOG:  checkpoint starting: time
+2025-04-21 00:08:23.145 +07 [99123] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.004 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1DE0758, redo lsn=0/1DE0700
+2025-04-21 02:42:20.442 +07 [99122] LOG:  received fast shutdown request
+2025-04-21 02:42:20.443 +07 [99122] LOG:  aborting any active transactions
+2025-04-21 02:42:20.446 +07 [99122] LOG:  background worker "logical replication launcher" (PID 99128) exited with exit code 1
+2025-04-21 02:42:20.446 +07 [99123] LOG:  shutting down
+2025-04-21 02:42:20.446 +07 [99123] LOG:  checkpoint starting: shutdown immediate
+2025-04-21 02:42:20.450 +07 [99123] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.004 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1DE0808, redo lsn=0/1DE0808
+2025-04-21 02:42:20.453 +07 [99122] LOG:  database system is shut down
