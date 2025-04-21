@@ -1,0 +1,87 @@
+/* homepage.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Overall layout */
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content split vertically */
+.homepage-vertical {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Top half with background image */
+.homepage-top {
+  flex: 1;
+  background-image: url('../../public/BKBackground.png') ;
+  height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bottom half with login */
+.homepage-bottom {
+  flex: 1;
+  background-color: #fff;
+}
+
+/* Login content box */
+.homepage-box {
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem 2.5rem;
+}
+
+/* Logo image */
+.homepage-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cornerlogo {
+  width: 40px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.d-grid {
+  display: grid !important;
+  gap: 1rem;
+}
+
+/* Footer styling */
+.footer {
+  height: auto;
+}
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-right {
+  max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    max-width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
